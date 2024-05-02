@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Makijc HTTP</title>
+        <link rel="icon" type="image/x-icon" href="/img/JackMaki.png">
+
+    </head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <style>
+        body {
+            font-family: "Allerta Stencil", Sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: black;
+            color: azure;
+            font-weight: lighter;
+        }
+
+        .gif-container {
+            text-align: right;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .mandel-container {
+            text-align: center;
+        }
+        
+    </style>
+    <body>
+        <h1>EHLO Internet</h1><br>
+
+        <div class="form-container">
+            <h2>--Mandelbrot Generator--</h2>
+            <form name="input" action="index.html" method="get" autocomplete="on">
+                <p>X coord</p>
+                <input type="number" name="x" step="0.0001"><br>
+                <p>Y coord</p>
+                <input type="number" name="y" step="0.0001"><br>
+                <p>Scale</p>
+                <input type="number" name="s" step="0.0001"><br>
+                <p>Maximum # of Iterations</p>
+                <input type="number" name="m" max ="2000"><br><br>
+                <input type="submit" name="submit" value="Generate!">
+            </form>
+        </div><br>
+
+        <div class="mandel-container">
+            <img src="/mandel0.jpg" alt="" width="1000" height="1000">
+        </div>
+
+        <aside>
+        <div class="gif-container">
+            <iframe src="https://giphy.com/embed/OpBA2nKQog7LENz8Of" width="480" height="403" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dog-pug-puglie-OpBA2nKQog7LENz8Of">via GIPHY</a></p>
+        </div>
+        </aside>
+
+    </body>
+</html>
